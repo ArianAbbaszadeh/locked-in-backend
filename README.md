@@ -37,8 +37,6 @@ The **Locked-In Backend** serves as the core for processing and identifying room
 ### ☁️ Other Tools
 - ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white)
 - ![Uvicorn](https://img.shields.io/badge/Uvicorn-FF69B4?style=for-the-badge)
-- ![PyTesseract](https://img.shields.io/badge/PyTesseract-0C66C2?style=for-the-badge)
-
 
 ## 📦 Dependencies
 
