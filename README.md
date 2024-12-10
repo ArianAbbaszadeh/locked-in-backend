@@ -142,8 +142,6 @@ Follow these steps to set up the project locally:
 ## 🚀 Future Work
 - Implement advanced machine learning models for room classification.
 - Add caching to improve performance for recurring queries.
-- Create a robust error-handling mechanism for failed API calls.
-
 
 ## 👥 Contributors
 
