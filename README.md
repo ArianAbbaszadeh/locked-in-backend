@@ -4,6 +4,8 @@
 
 The **Locked-In Backend** serves as the core for processing and identifying room data efficiently. This project is aimed at creating a scalable and reliable backend architecture for handling room-related data. This service is optimized for room identification and processing, providing efficient data handling and API integration, eventually automating geospatial data with computer vision.
 
+## 🔗 Repository
+[Locked-In Backend Repository](https://github.com/ArianAbbaszadeh/locked-in-backend)
 ---
 
 ## ✨ Features
@@ -12,6 +14,10 @@ The **Locked-In Backend** serves as the core for processing and identifying room
 - 🏠 Room Identification
 - 🗄️ Database Integration
 - 🚀 Optimized Processes For Faster Execution
+
+## 🛠️ Overview of How the Code Works
+- **Backend**: The backend, developed using FastAPI, serves as the core of the application. It processes uploaded floor plans by utilising image processing techniques via OpenCV and OCR capabilities powered by PyTesseract. The extracted room data is stored in a MongoDB database and is accessible through a set of APIs. These APIs are designed to seamlessly interact with the frontend, ensuring efficient data exchange and integration. Key tasks performed by the backend include: room identification and floor plan segmentation, handling file uploads and processing requests, managing geospatial data conversion to GeoJSON for frontend display.
+- **Frontend**: The frontend, built with React and integrated with Mapbox GL JS, provides an intuitive interface for users to upload and interact with processed floor plan data. The visualisation includes interactive maps, heatmaps, and time-series data, making use of Mapbox’s capabilities to render GeoJSON tilesets.
 
 ---
 
@@ -123,6 +129,20 @@ Follow these steps to set up the project locally:
    The frontend will be available at `http://localhost:3000`
 
 ---
+
+## ✅ What Works
+- Successful room identification and floor plan cropping.
+- Seamless integration with MongoDB and Cloudinary for storage.
+- FastAPI APIs responding as expected for image uploads and processing.
+
+## ⚠️ What Doesn’t
+- OCR struggles with text over complex backgrounds.
+- Performance issues with large floor plan images.
+
+## 🚀 Future Work
+- Implement advanced machine learning models for room classification.
+- Add caching to improve performance for recurring queries.
+- Create a robust error-handling mechanism for failed API calls.
 
 
 ## 👥 Contributors
