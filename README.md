@@ -16,8 +16,8 @@ The **Locked-In Backend** serves as the core for processing and identifying room
 - 🚀 Optimized Processes For Faster Execution
 
 ## 🛠️ Overview of How the Code Works
-- **Backend**: The backend, developed using FastAPI, serves as the core of the application. It processes uploaded floor plans by utilising image processing techniques via OpenCV and OCR capabilities powered by PyTesseract. The extracted room data is stored in a MongoDB database and is accessible through a set of APIs. These APIs are designed to seamlessly interact with the frontend, ensuring efficient data exchange and integration. Key tasks performed by the backend include: room identification and floor plan segmentation, handling file uploads and processing requests, managing geospatial data conversion to GeoJSON for frontend display.
-- **Frontend**: The frontend, built with React and integrated with Mapbox GL JS, provides an intuitive interface for users to upload and interact with processed floor plan data. The visualisation includes interactive maps, heatmaps, and time-series data, making use of Mapbox’s capabilities to render GeoJSON tilesets.
+- **Backend**: The backend, developed using Python, serves as the core of the application. It processes uploaded floor plans by utilising image processing techniques via openCV. The extracted room data is stored in a MongoDB database and is accessible through a set of APIs made through FastAPI. These APIs are designed to seamlessly interact with the frontend, ensuring efficient data exchange and integration. Key tasks performed by the backend include: room identification and floor plan segmentation, handling file uploads and processing requests, managing geospatial data conversion to GeoJSON for frontend display.
+- **Frontend**: The frontend, built with React and integrated with Mapbox GL JS, provides an intuitive interface for users to organize, upload and resize the processed GeoJSON. The visualisation includes interactive maps making use of Mapbox’s capabilities to render GeoJSON tilesets.
 
 ---
 
@@ -56,10 +56,10 @@ This project relies on the following key dependencies:
 | **PyMongo**          | MongoDB client for database operations.                   |
 | **Cloudinary**       | Cloud-based image storage and management.                 |
 | **python-dotenv**    | Environment variable management.                          |
-| **OpenCV**           | Image processing and computer vision tasks.              |
-| **NumPy**            | Numerical operations and array handling.                 |
+| **OpenCV**           | Image processing and computer vision tasks.               |
+| **NumPy**            | Numerical operations and array handling.                  |
 | **scikit-image**     | Advanced image processing and manipulation.               |
-| **PyTesseract**      | Optical character recognition (OCR) capabilities.         |
+| **easyocr**          | Text character recognition                                |
 | **SciPy**            | Scientific computing and advanced numerical methods.      |
 
 ---
@@ -133,22 +133,24 @@ Follow these steps to set up the project locally:
 ## ✅ What Works
 - Successful room identification and floor plan cropping.
 - Seamless integration with MongoDB and Cloudinary for storage.
-- FastAPI APIs responding as expected for image uploads and processing.
+- API calls for buildings, floors, and coordinates.
 
 ## ⚠️ What Doesn’t
-- OCR struggles with text over complex backgrounds.
-- Performance issues with large floor plan images.
+- Small object removal 
+- Room identification for small rooms
+- Room identification for very large gaps
 
 ## 🚀 Future Work
-- Implement advanced machine learning models for room classification.
-- Add caching to improve performance for recurring queries.
+- Implement small object removal
+- Implement new parameters and algorithms for more consistent room identification across diverse floorplans
+- Speed up text identification algorithm - currently a bottleneck
 
 ## 👥 Contributors
 
-| Name                   | Email                       |
-|------------------------|-----------------------------|
-| **Adelia Han**         | [han293@wisc.edu](mailto:han293@wisc.edu) |
-| **Arian Abbaszadeh**   | [abbaszadeh@wisc.edu](mailto:abbaszadeh@wisc.edu) |
-| **Asish Das**          | [das38@wisc.edu](mailto:das38@wisc.edu) |
-| **Simarjit Singh Pannu** | [pannu2@wisc.edu](mailto:pannu2@wisc.edu) |
-| **Tina Li**            | [tli442@wisc.edu](mailto:tli442@wisc.edu) |
+| Name                   | Email                       |Contributions         |
+|------------------------|-----------------------------|----------------------|
+| **Adelia Han**         | [han293@wisc.edu](mailto:han293@wisc.edu) | |
+| **Arian Abbaszadeh**   | [abbaszadeh@wisc.edu](mailto:abbaszadeh@wisc.edu) | Cropping Algorithm, Text Removal Algorithm, Room Identification Optimizations, React Frontend, GeoJSON Resizing Capability, API Creation, Database Creation (MongoDB / Cloudinary), GeoJSON Conversion Algorithm |
+| **Asish Das**          | [das38@wisc.edu](mailto:das38@wisc.edu) |  |
+| **Simarjit Singh Pannu** | [pannu2@wisc.edu](mailto:pannu2@wisc.edu) | |
+| **Tina Li**            | [tli442@wisc.edu](mailto:tli442@wisc.edu) | |
