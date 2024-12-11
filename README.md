@@ -149,8 +149,8 @@ Follow these steps to set up the project locally:
 
 | Name                   | Email                       |Contributions         |
 |------------------------|-----------------------------|----------------------|
-| **Adelia Han**         | [han293@wisc.edu](mailto:han293@wisc.edu) | |
-| **Arian Abbaszadeh**   | [abbaszadeh@wisc.edu](mailto:abbaszadeh@wisc.edu) | Cropping Algorithm, Text Removal Algorithm, Room Identification Optimizations, React Frontend, GeoJSON Resizing Capability, API Creation, Database Creation (MongoDB / Cloudinary), GeoJSON Conversion Algorithm |
-| **Asish Das**          | [das38@wisc.edu](mailto:das38@wisc.edu) |  |
-| **Simarjit Singh Pannu** | [pannu2@wisc.edu](mailto:pannu2@wisc.edu) | |
-| **Tina Li**            | [tli442@wisc.edu](mailto:tli442@wisc.edu) | |
+| **Adelia Han**         | [han293@wisc.edu](mailto:han293@wisc.edu) | Room Identification Optimizations|
+| **Arian Abbaszadeh**   | [abbaszadeh@wisc.edu](mailto:abbaszadeh@wisc.edu) | Cropping Algorithm, Text Removal Algorithm, Room Identification Optimizations, React Frontend, GeoJSON and Bounding Box Merge, API Creation, Database Creation (MongoDB / Cloudinary) |
+| **Asish Das**          | [das38@wisc.edu](mailto:das38@wisc.edu) |  GeoJSON Conversion Algorithm, Product Manager|
+| **Simarjit Singh Pannu** | [pannu2@wisc.edu](mailto:pannu2@wisc.edu) | Address to Bounding Box Conversion, Scrum Manager|
+| **Tina Li**            | [tli442@wisc.edu](mailto:tli442@wisc.edu) | Room Identification Algorithm, Object removal Algorithm, Gap Merging Algorithm, Smoothing Algorithm|
